@@ -5,6 +5,7 @@ aliases: harbor, law, law firm, legal, attorney, lawyer
 target_roas: 3.0
 monthly_budget: 19000
 naming_pattern: ^HL_(META|GGL)_(SRCH|LEADS|RET|DISP|PMAX)_[A-Za-z0-9]+$
+naming_example: HL_GGL_SRCH_CarAccident
 conversion_label: signed-case leads
 email_to: Priya Shah (Managing Partner)
 email_style: formal

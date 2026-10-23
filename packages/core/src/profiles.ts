@@ -32,6 +32,7 @@ function toSettings(clientId: string, d: Record<string, string>): ProfileSetting
     target_roas: Number(need("target_roas")),
     monthly_budget: Number(need("monthly_budget")),
     naming_pattern: need("naming_pattern"),
+    naming_example: d.naming_example || "",
     conversion_label: d.conversion_label || "conversions",
     email_to: d.email_to || "",
     email_style: style,

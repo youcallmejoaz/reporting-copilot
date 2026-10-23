@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ads-data": {
+      "command": "npx",
+      "args": ["tsx", "packages/mcp-server/src/index.ts"],
+      "env": { "MCP_SCOPES": "read,draft" }
+    }
+  }
+}

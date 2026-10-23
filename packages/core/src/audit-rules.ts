@@ -73,8 +73,9 @@ export async function auditAccount(clientId: string, asOf = asOfDate()): Promise
         entity_id: c.id,
         campaign_id: c.id,
         entity_name: c.name,
-        reason: `"${c.name}" does not follow the naming convention (${profile.settings.naming_pattern}).`,
+        reason: `Campaign name breaks the naming convention${profile.settings.naming_example ? ` (expected a name like ${profile.settings.naming_example})` : ""}.`,
         recommendation: "Rename to the client's convention so reports and filters pick it up.",
+        metric: { pattern: profile.settings.naming_pattern },
       });
     }
   }

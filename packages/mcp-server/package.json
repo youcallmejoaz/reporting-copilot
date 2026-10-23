@@ -8,7 +8,7 @@
   "exports": { ".": "./src/exports.ts" },
   "bin": { "ads-data-mcp": "dist/index.js" },
   "scripts": {
-    "build": "tsup src/index.ts --format esm --platform node --target node22 --out-dir dist --clean --external playwright --external @anthropic-ai/sdk --no-splitting"
+    "build": "tsup"
   },
   "dependencies": {
     "@arc/core": "0.1.0",

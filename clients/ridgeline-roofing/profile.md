@@ -5,6 +5,7 @@ aliases: ridgeline, roofing, roofer, roof
 target_roas: 4.0
 monthly_budget: 11000
 naming_pattern: ^RR_(META|GGL)_(SRCH|LEADS|RET|PMAX|DISP)_[A-Za-z0-9]+$
+naming_example: RR_GGL_SRCH_StormDamage
 conversion_label: leads
 email_to: Dave Romero (Owner)
 email_style: plain

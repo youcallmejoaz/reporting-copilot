@@ -5,6 +5,7 @@ aliases: northstar, white label, white-label, dental, partner agency
 target_roas: 3.0
 monthly_budget: 9000
 naming_pattern: ^NP_(META|GGL)_(SRCH|LEADS|RET|PMAX|DISP)_[A-Za-z0-9]+$
+naming_example: NP_META_LEADS_NewPatient
 conversion_label: booked appointments
 email_to: Sam Okafor (Account Director, Northstar Partners)
 email_style: friendly

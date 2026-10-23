@@ -5,6 +5,7 @@ aliases: glowfield, skincare, skin care, ecommerce
 target_roas: 3.0
 monthly_budget: 12500
 naming_pattern: ^GF_(META|GGL)_(PROS|RET|SHOP|BRAND|SRCH|PMAX)_[A-Za-z0-9]+$
+naming_example: GF_META_RET_Cart30d
 conversion_label: purchases
 email_to: Maya Lin (Head of Growth)
 email_style: friendly

@@ -160,10 +160,12 @@ export function templateNarrative(r: Omit<WeeklyReport, keyof Narrative | "writt
   if (misses.length === 0) misses.push("No campaigns below target this week.");
   if (wins.length === 0) wins.push(`Spend held at ${fmtMoney(t.spend)} with ${t.conversions} ${r.conversion_label}.`);
 
-  for (const f of r.findings) {
+  // One action per recommendation, naming every entity it applies to.
+  const byRec = new Map<string, string[]>();
+  for (const f of r.findings) byRec.set(f.recommendation, [...(byRec.get(f.recommendation) ?? []), f.entity_name]);
+  for (const [rec, names] of byRec) {
     if (actions.length >= 3) break;
-    const a = `${f.recommendation.replace(/\.$/, "")} (${f.entity_name}).`;
-    if (!actions.includes(a)) actions.push(a);
+    actions.push(`${rec.replace(/\.$/, "")}: ${names.join(", ")}.`);
   }
   if (strong[0] && weak[0] && actions.length < 4) actions.push(`Shift budget from ${weak[0].name} toward ${strong[0].name}.`);
   if (actions.length < 4 && r.findings.some((f) => f.rule === "low_ctr" || f.rule === "roas_below_1")) {

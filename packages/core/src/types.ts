@@ -87,6 +87,7 @@ export interface ProfileSettings {
   target_roas: number;
   monthly_budget: number;
   naming_pattern: string;
+  naming_example: string;
   conversion_label: string;
   email_to: string;
   email_style: "friendly" | "formal" | "plain";

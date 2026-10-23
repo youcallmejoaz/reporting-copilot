@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 function looksLikeRoot(dir: string): boolean {
   return fs.existsSync(path.join(dir, "clients")) && fs.existsSync(path.join(dir, "data", "sample"));
@@ -17,11 +18,23 @@ function walkUp(start: string): string | null {
 
 let cachedRoot: string | null = null;
 
-/** Repo root: ARC_ROOT env, else the nearest parent of cwd containing clients/ and data/sample/. */
+function moduleDir(): string | null {
+  try {
+    return path.dirname(fileURLToPath(import.meta.url));
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Repo root: ARC_ROOT env, else the nearest parent of cwd containing clients/ and data/sample/,
+ * else the nearest parent of this file (so `node packages/mcp-server/dist/index.js` works from any cwd).
+ */
 export function repoRoot(): string {
   if (process.env.ARC_ROOT) return path.resolve(process.env.ARC_ROOT);
   if (cachedRoot) return cachedRoot;
-  const found = walkUp(process.cwd());
+  const here = moduleDir();
+  const found = walkUp(process.cwd()) ?? (here ? walkUp(here) : null);
   if (!found) {
     throw new Error("Could not find the repo root (clients/ + data/sample/). Set ARC_ROOT to the repo path.");
   }

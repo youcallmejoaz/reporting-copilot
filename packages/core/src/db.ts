@@ -1,7 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
-import { DatabaseSync } from "node:sqlite";
+import type { DatabaseSync } from "node:sqlite";
 import { paths } from "./paths.js";
+
+// Loaded at runtime so bundlers (tsup/esbuild, Next.js) cannot rewrite the "node:sqlite" specifier.
+const { DatabaseSync: Database } = process.getBuiltinModule("node:sqlite") as typeof import("node:sqlite");
 
 const SCHEMA = `
 CREATE TABLE IF NOT EXISTS runs (
@@ -66,7 +69,7 @@ export function getDb(): DatabaseSync {
   if (db && dbPath === p) return db;
   if (db) db.close();
   if (p !== ":memory:") fs.mkdirSync(path.dirname(p), { recursive: true });
-  db = new DatabaseSync(p);
+  db = new Database(p);
   db.exec("PRAGMA journal_mode = WAL; PRAGMA busy_timeout = 5000; PRAGMA foreign_keys = ON;");
   db.exec(SCHEMA);
   dbPath = p;
