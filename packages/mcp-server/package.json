@@ -1,0 +1,19 @@
+{
+  "name": "@arc/mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/exports.ts",
+  "types": "src/exports.ts",
+  "exports": { ".": "./src/exports.ts" },
+  "bin": { "ads-data-mcp": "dist/index.js" },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --platform node --target node22 --out-dir dist --clean --external playwright --external @anthropic-ai/sdk --no-splitting"
+  },
+  "dependencies": {
+    "@arc/core": "0.1.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": { "tsup": "^8.5.0" }
+}

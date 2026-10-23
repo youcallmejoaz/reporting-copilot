@@ -1,0 +1,490 @@
+[
+ {
+  "id": "ad_gf_01a1",
+  "ad_set_id": "as_gf_01a",
+  "name": "Video_UGC_MorningRoutine_v1",
+  "headline": "The 3-step routine that fixed my skin",
+  "primary_text": "Real customers, real results. Try the Glowfield starter set.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_01a2",
+  "ad_set_id": "as_gf_01a",
+  "name": "Video_Founder_Story_v1",
+  "headline": "Made by a dermatologist, for sensitive skin",
+  "primary_text": "Fragrance-free, barrier-first skincare. Free shipping over $40.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_01b1",
+  "ad_set_id": "as_gf_01b",
+  "name": "Video_BeforeAfter_v2",
+  "headline": "28 days. No filters.",
+  "primary_text": "See what a barrier-first routine does in four weeks.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_01b2",
+  "ad_set_id": "as_gf_01b",
+  "name": "Carousel_Bestsellers_v1",
+  "headline": "Our bestsellers, all under $35",
+  "primary_text": "Cleanser, serum, moisturizer. Pick your trio.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_02a1",
+  "ad_set_id": "as_gf_02a",
+  "name": "Static_CartReminder_v3",
+  "headline": "Still thinking it over?",
+  "primary_text": "Your cart is waiting, and shipping is on us this week.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_02a2",
+  "ad_set_id": "as_gf_02a",
+  "name": "Static_Reviews_v2",
+  "headline": "4.8 stars from 12,000+ customers",
+  "primary_text": "See why people switch to Glowfield.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_02b1",
+  "ad_set_id": "as_gf_02b",
+  "name": "Carousel_ViewedProducts_v1",
+  "headline": "Picked up where you left off",
+  "primary_text": "The products you viewed, back in stock.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_02b2",
+  "ad_set_id": "as_gf_02b",
+  "name": "Static_Bundle_v1",
+  "headline": "Save 15% on the full routine",
+  "primary_text": "Bundle and save on cleanser, serum and SPF.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_03a1",
+  "ad_set_id": "as_gf_03a",
+  "name": "Shopping_Feed_Bestsellers",
+  "headline": "Glowfield Barrier Serum",
+  "primary_text": "Product feed listing",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_03b1",
+  "ad_set_id": "as_gf_03b",
+  "name": "Shopping_Feed_Catchall",
+  "headline": "Glowfield Gentle Cleanser",
+  "primary_text": "Product feed listing",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_03b2",
+  "ad_set_id": "as_gf_03b",
+  "name": "Shopping_Feed_Bundles",
+  "headline": "Glowfield Routine Bundle",
+  "primary_text": "Product feed listing",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_04a1",
+  "ad_set_id": "as_gf_04a",
+  "name": "RSA_Brand_Core_v1",
+  "headline": "Glowfield Skincare | Official Site",
+  "primary_text": "Barrier-first skincare. Free shipping over $40.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_04a2",
+  "ad_set_id": "as_gf_04a",
+  "name": "RSA_Brand_Offer_v1",
+  "headline": "Glowfield | 15% Off Your First Order",
+  "primary_text": "Dermatologist developed. Fragrance free.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_04b1",
+  "ad_set_id": "as_gf_04b",
+  "name": "RSA_Brand_Reviews_v1",
+  "headline": "Glowfield Reviews | 4.8 Stars",
+  "primary_text": "Join 12,000+ happy customers.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_gf_04b2",
+  "ad_set_id": "as_gf_04b",
+  "name": "RSA_Brand_Shipping_v1",
+  "headline": "Glowfield | Fast Free Shipping",
+  "primary_text": "Order today, ships in 24 hours.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_01a1",
+  "ad_set_id": "as_rr_01a",
+  "name": "RSA_Repair_Fast_v2",
+  "headline": "Roof Leak? Same-Week Repairs",
+  "primary_text": "Licensed & insured. Free inspection, upfront pricing.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_01a2",
+  "ad_set_id": "as_rr_01a",
+  "name": "RSA_Repair_Local_v1",
+  "headline": "Local Roof Repair Experts",
+  "primary_text": "Family owned for 20 years. Call for a free quote.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_01b1",
+  "ad_set_id": "as_rr_01b",
+  "name": "RSA_Repair_Warranty_v1",
+  "headline": "Roof Repairs With 10-Yr Warranty",
+  "primary_text": "Workmanship guaranteed. Book online in 2 minutes.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_01b2",
+  "ad_set_id": "as_rr_01b",
+  "name": "RSA_Repair_Financing_v1",
+  "headline": "Roof Repair Financing Available",
+  "primary_text": "0% options for qualified homeowners.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_02a1",
+  "ad_set_id": "as_rr_02a",
+  "name": "RSA_Replace_Quote_v1",
+  "headline": "New Roof Quotes in 24 Hours",
+  "primary_text": "Asphalt, metal and tile. Free drone inspection.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_02a2",
+  "ad_set_id": "as_rr_02a",
+  "name": "RSA_Replace_Brands_v1",
+  "headline": "Certified Installer, Top Shingle Brands",
+  "primary_text": "Lifetime manufacturer warranty available.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_02b1",
+  "ad_set_id": "as_rr_02b",
+  "name": "RSA_Replace_Financing_v1",
+  "headline": "Roof Replacement Financing",
+  "primary_text": "Low monthly payments. Apply in minutes.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_02b2",
+  "ad_set_id": "as_rr_02b",
+  "name": "RSA_Replace_Reviews_v1",
+  "headline": "4.9★ Rated Roofers Near You",
+  "primary_text": "500+ local roofs replaced.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_03a1",
+  "ad_set_id": "as_rr_03a",
+  "name": "RSA_Storm_Inspect_v1",
+  "headline": "Storm Damage? Free Roof Inspection",
+  "primary_text": "We work directly with your insurance company.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_03a2",
+  "ad_set_id": "as_rr_03a",
+  "name": "RSA_Storm_Hail_v1",
+  "headline": "Hail Damage Roof Repair",
+  "primary_text": "Fast inspections after every storm.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_03b1",
+  "ad_set_id": "as_rr_03b",
+  "name": "RSA_Storm_Claims_v1",
+  "headline": "Help With Roof Insurance Claims",
+  "primary_text": "We handle the paperwork. You get a new roof.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_03b2",
+  "ad_set_id": "as_rr_03b",
+  "name": "RSA_Storm_Tarp_v1",
+  "headline": "Emergency Roof Tarping 24/7",
+  "primary_text": "Call now for same-day emergency service.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_04a1",
+  "ad_set_id": "as_rr_04a",
+  "name": "Video_DroneInspection_v1",
+  "headline": "See your roof from above, free",
+  "primary_text": "Book a free drone inspection this week.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_04a2",
+  "ad_set_id": "as_rr_04a",
+  "name": "Static_Financing_v1",
+  "headline": "New roof, low monthly payments",
+  "primary_text": "Financing for qualified homeowners.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_04b1",
+  "ad_set_id": "as_rr_04b",
+  "name": "Static_Reviews_v1",
+  "headline": "500+ neighbors trust Ridgeline",
+  "primary_text": "Read reviews from homeowners near you.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_rr_04b2",
+  "ad_set_id": "as_rr_04b",
+  "name": "Video_Crew_v1",
+  "headline": "Meet the crew that will treat your home like ours",
+  "primary_text": "Licensed, insured and local.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_01a1",
+  "ad_set_id": "as_hl_01a",
+  "name": "RSA_CarAccident_FreeConsult_v1",
+  "headline": "Injured in a Car Accident?",
+  "primary_text": "Free consultation. No fee unless we win.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_01a2",
+  "ad_set_id": "as_hl_01a",
+  "name": "RSA_CarAccident_Results_v1",
+  "headline": "Car Accident Lawyers, Proven Results",
+  "primary_text": "Talk to an attorney today, 24/7.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_01b1",
+  "ad_set_id": "as_hl_01b",
+  "name": "RSA_CarAccident_Local_v1",
+  "headline": "Local Car Accident Attorneys",
+  "primary_text": "Serving the county for 25 years.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_01b2",
+  "ad_set_id": "as_hl_01b",
+  "name": "RSA_CarAccident_Insurance_v1",
+  "headline": "Insurance Lowballing You?",
+  "primary_text": "We fight for the full settlement you deserve.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_02a1",
+  "ad_set_id": "as_hl_02a",
+  "name": "RSA_WorkInjury_Comp_v1",
+  "headline": "Hurt at Work? Know Your Rights",
+  "primary_text": "Workers' comp claims handled start to finish.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_02a2",
+  "ad_set_id": "as_hl_02a",
+  "name": "RSA_WorkInjury_Denied_v1",
+  "headline": "Workers' Comp Claim Denied?",
+  "primary_text": "We appeal denied claims. Free review.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_02b1",
+  "ad_set_id": "as_hl_02b",
+  "name": "RSA_WorkInjury_Construction_v1",
+  "headline": "Construction Injury Lawyers",
+  "primary_text": "No fee unless we recover compensation.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_02b2",
+  "ad_set_id": "as_hl_02b",
+  "name": "RSA_WorkInjury_Call_v1",
+  "headline": "Speak With an Attorney Today",
+  "primary_text": "Free, confidential case review.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_03a1",
+  "ad_set_id": "as_hl_03a",
+  "name": "Static_FreeConsult_v2",
+  "headline": "Hurt in an accident? Free case review",
+  "primary_text": "Find out what your case is worth in 2 minutes.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_03a2",
+  "ad_set_id": "as_hl_03a",
+  "name": "Video_Attorney_Intro_v1",
+  "headline": "Meet the attorney who will fight for you",
+  "primary_text": "No fee unless we win.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_03b1",
+  "ad_set_id": "as_hl_03b",
+  "name": "Static_Testimonial_v1",
+  "headline": "\"They got me 3x the insurance offer\"",
+  "primary_text": "Read client stories.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_03b2",
+  "ad_set_id": "as_hl_03b",
+  "name": "Static_NoFee_v1",
+  "headline": "No win, no fee. Ever.",
+  "primary_text": "Free consultation, available 24/7.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_04a1",
+  "ad_set_id": "as_hl_04a",
+  "name": "Display_Banner_FreeConsult_v1",
+  "headline": "Still need help with your case?",
+  "primary_text": "Free consultation.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_04a2",
+  "ad_set_id": "as_hl_04a",
+  "name": "Display_Banner_Results_v1",
+  "headline": "$50M+ recovered for clients",
+  "primary_text": "Call today.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_04b1",
+  "ad_set_id": "as_hl_04b",
+  "name": "Display_Banner_NoFee_v1",
+  "headline": "No fee unless we win",
+  "primary_text": "Talk to a lawyer today.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_hl_04b2",
+  "ad_set_id": "as_hl_04b",
+  "name": "Display_Banner_Reviews_v1",
+  "headline": "5-star rated injury lawyers",
+  "primary_text": "Read our reviews.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_01a1",
+  "ad_set_id": "as_np_01a",
+  "name": "Static_Offer_v1",
+  "headline": "New patient special",
+  "primary_text": "Exam, x-rays and cleaning. Book online.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_01a2",
+  "ad_set_id": "as_np_01a",
+  "name": "Video_Tour_v1",
+  "headline": "Take a 30-second tour of our clinic",
+  "primary_text": "Gentle care, modern equipment, Saturday hours.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_01b1",
+  "ad_set_id": "as_np_01b",
+  "name": "Static_Family_v1",
+  "headline": "Family dentistry, one visit for everyone",
+  "primary_text": "Book back-to-back appointments for the whole family.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_01b2",
+  "ad_set_id": "as_np_01b",
+  "name": "Carousel_Smiles_v1",
+  "headline": "Real patients, real smiles",
+  "primary_text": "See before and afters from our patients.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_02a1",
+  "ad_set_id": "as_np_02a",
+  "name": "RSA_Implants_Consult_v1",
+  "headline": "Dental Implants, Free Consultation",
+  "primary_text": "Financing available. Same-day CT scan.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_02a2",
+  "ad_set_id": "as_np_02a",
+  "name": "RSA_Implants_Price_v1",
+  "headline": "Affordable Dental Implants",
+  "primary_text": "Transparent pricing, no surprises.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_02b1",
+  "ad_set_id": "as_np_02b",
+  "name": "RSA_Implants_AllOn4_v1",
+  "headline": "All-on-4 Implants Near You",
+  "primary_text": "Permanent teeth in a day.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_02b2",
+  "ad_set_id": "as_np_02b",
+  "name": "RSA_Implants_Reviews_v1",
+  "headline": "Top Rated Implant Dentists",
+  "primary_text": "Hundreds of 5-star reviews.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_03a1",
+  "ad_set_id": "as_np_03a",
+  "name": "Static_BookNow_v1",
+  "headline": "Your smile is waiting",
+  "primary_text": "Book your visit in under a minute.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_03a2",
+  "ad_set_id": "as_np_03a",
+  "name": "Static_Saturday_v1",
+  "headline": "Open Saturdays",
+  "primary_text": "Appointments that fit your week.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_03b1",
+  "ad_set_id": "as_np_03b",
+  "name": "Static_Finish_v1",
+  "headline": "Finish booking your visit",
+  "primary_text": "It takes less than a minute.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_03b2",
+  "ad_set_id": "as_np_03b",
+  "name": "Static_Insurance_v1",
+  "headline": "We accept most insurance",
+  "primary_text": "Check your coverage instantly.",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_04a1",
+  "ad_set_id": "as_np_04a",
+  "name": "PMAX_General_v1",
+  "headline": "Gentle Dentistry Near You",
+  "primary_text": "Asset group",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "ad_np_04b1",
+  "ad_set_id": "as_np_04b",
+  "name": "PMAX_Emergency_v1",
+  "headline": "Emergency Dentist Today",
+  "primary_text": "Asset group",
+  "status": "ACTIVE"
+ }
+]

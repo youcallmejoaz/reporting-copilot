@@ -1,0 +1,58 @@
+[
+ {
+  "id": "glowfield-skincare",
+  "name": "Glowfield Skincare",
+  "vertical": "Ecommerce · skincare",
+  "platforms": [
+   "meta",
+   "google"
+  ],
+  "account_ids": {
+   "meta": "act_000000000101",
+   "google": "000-000-0101"
+  },
+  "currency": "USD"
+ },
+ {
+  "id": "ridgeline-roofing",
+  "name": "Ridgeline Roofing Co.",
+  "vertical": "Local services · roofing lead gen",
+  "platforms": [
+   "google",
+   "meta"
+  ],
+  "account_ids": {
+   "google": "000-000-0202",
+   "meta": "act_000000000202"
+  },
+  "currency": "USD"
+ },
+ {
+  "id": "harbor-law",
+  "name": "Harbor Law Group",
+  "vertical": "Legal · personal injury lead gen",
+  "platforms": [
+   "google",
+   "meta"
+  ],
+  "account_ids": {
+   "google": "000-000-0303",
+   "meta": "act_000000000303"
+  },
+  "currency": "USD"
+ },
+ {
+  "id": "northstar-partners",
+  "name": "Northstar Partners (white label)",
+  "vertical": "White-label agency · dental clinic group lead gen",
+  "platforms": [
+   "meta",
+   "google"
+  ],
+  "account_ids": {
+   "meta": "act_000000000404",
+   "google": "000-000-0404"
+  },
+  "currency": "USD"
+ }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "agency-reporting-copilot",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "generate:data": "tsx scripts/generate-sample-data.ts",
+    "mcp": "tsx packages/mcp-server/src/index.ts",
+    "build:mcp": "npm run build -w @arc/mcp-server",
+    "weekly": "tsx scripts/run-weekly.ts",
+    "seed:drafts": "tsx scripts/seed-drafts.ts",
+    "dev": "npm run dev -w @arc/dashboard",
+    "build": "npm run build:mcp && npm run build -w @arc/dashboard",
+    "start": "npm run start -w @arc/dashboard",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:e2e": "vitest run --config vitest.e2e.config.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,130 @@
+[
+ {
+  "id": "cmp_gf_01",
+  "client_id": "glowfield-skincare",
+  "platform": "meta",
+  "name": "GF_META_PROS_BroadVideo",
+  "objective": "Sales",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_gf_02",
+  "client_id": "glowfield-skincare",
+  "platform": "meta",
+  "name": "GF_META_RET_Cart30d",
+  "objective": "Sales",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_gf_03",
+  "client_id": "glowfield-skincare",
+  "platform": "google",
+  "name": "GF_GGL_SHOP_AllProducts",
+  "objective": "Sales",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_gf_04",
+  "client_id": "glowfield-skincare",
+  "platform": "google",
+  "name": "GF_GGL_BRAND_Search",
+  "objective": "Sales",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_rr_01",
+  "client_id": "ridgeline-roofing",
+  "platform": "google",
+  "name": "RR_GGL_SRCH_RoofRepair",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_rr_02",
+  "client_id": "ridgeline-roofing",
+  "platform": "google",
+  "name": "RR_GGL_SRCH_RoofReplacement",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_rr_03",
+  "client_id": "ridgeline-roofing",
+  "platform": "google",
+  "name": "roof ads new FINAL",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_rr_04",
+  "client_id": "ridgeline-roofing",
+  "platform": "meta",
+  "name": "Copy of RR_META_LEADS_Homeowners",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_hl_01",
+  "client_id": "harbor-law",
+  "platform": "google",
+  "name": "HL_GGL_SRCH_CarAccident",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_hl_02",
+  "client_id": "harbor-law",
+  "platform": "google",
+  "name": "HL_GGL_SRCH_WorkInjury",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_hl_03",
+  "client_id": "harbor-law",
+  "platform": "meta",
+  "name": "HL_META_LEADS_LocalLookalike",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_hl_04",
+  "client_id": "harbor-law",
+  "platform": "google",
+  "name": "HL_GGL_DISP_Remarketing",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_np_01",
+  "client_id": "northstar-partners",
+  "platform": "meta",
+  "name": "NP_META_LEADS_NewPatient",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_np_02",
+  "client_id": "northstar-partners",
+  "platform": "google",
+  "name": "NP_GGL_SRCH_Implants",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_np_03",
+  "client_id": "northstar-partners",
+  "platform": "meta",
+  "name": "NP_META_RET_SiteVisitors",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ },
+ {
+  "id": "cmp_np_04",
+  "client_id": "northstar-partners",
+  "platform": "google",
+  "name": "NP_GGL_PMAX_Local",
+  "objective": "Leads",
+  "status": "ACTIVE"
+ }
+]

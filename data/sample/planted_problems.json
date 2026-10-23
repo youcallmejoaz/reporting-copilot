@@ -1,0 +1,38 @@
+[
+ {
+  "client_id": "glowfield-skincare",
+  "rule": "roas_below_1",
+  "entity_id": "cmp_gf_01",
+  "note": "Prospecting campaign returning ~$0.70 per $1"
+ },
+ {
+  "client_id": "ridgeline-roofing",
+  "rule": "broken_naming",
+  "entity_id": "cmp_rr_03",
+  "note": "\"roof ads new FINAL\""
+ },
+ {
+  "client_id": "ridgeline-roofing",
+  "rule": "broken_naming",
+  "entity_id": "cmp_rr_04",
+  "note": "\"Copy of RR_META_LEADS_Homeowners\""
+ },
+ {
+  "client_id": "harbor-law",
+  "rule": "overspend",
+  "entity_id": "as_hl_03a",
+  "note": "Lookalike ad set spending ~140% of its daily budget"
+ },
+ {
+  "client_id": "harbor-law",
+  "rule": "wasted_spend",
+  "entity_id": "cmp_hl_04",
+  "note": "Display remarketing with spend and zero leads"
+ },
+ {
+  "client_id": "northstar-partners",
+  "rule": "low_ctr",
+  "entity_id": "ad_np_01a1",
+  "note": "Static offer creative with CTR ~0.25%"
+ }
+]

@@ -1,0 +1,194 @@
+[
+ {
+  "id": "as_gf_01a",
+  "campaign_id": "cmp_gf_01",
+  "name": "Broad_F25-54_US",
+  "daily_budget": 90
+ },
+ {
+  "id": "as_gf_01b",
+  "campaign_id": "cmp_gf_01",
+  "name": "Interest_SkincareFans_US",
+  "daily_budget": 90
+ },
+ {
+  "id": "as_gf_02a",
+  "campaign_id": "cmp_gf_02",
+  "name": "CartAbandon_30d",
+  "daily_budget": 40
+ },
+ {
+  "id": "as_gf_02b",
+  "campaign_id": "cmp_gf_02",
+  "name": "Viewers_ProductPage_30d",
+  "daily_budget": 30
+ },
+ {
+  "id": "as_gf_03a",
+  "campaign_id": "cmp_gf_03",
+  "name": "Shopping_Bestsellers",
+  "daily_budget": 70
+ },
+ {
+  "id": "as_gf_03b",
+  "campaign_id": "cmp_gf_03",
+  "name": "Shopping_Catchall",
+  "daily_budget": 50
+ },
+ {
+  "id": "as_gf_04a",
+  "campaign_id": "cmp_gf_04",
+  "name": "Brand_Exact",
+  "daily_budget": 20
+ },
+ {
+  "id": "as_gf_04b",
+  "campaign_id": "cmp_gf_04",
+  "name": "Brand_Phrase",
+  "daily_budget": 15
+ },
+ {
+  "id": "as_rr_01a",
+  "campaign_id": "cmp_rr_01",
+  "name": "RoofRepair_Exact",
+  "daily_budget": 60
+ },
+ {
+  "id": "as_rr_01b",
+  "campaign_id": "cmp_rr_01",
+  "name": "RoofRepair_Phrase",
+  "daily_budget": 40
+ },
+ {
+  "id": "as_rr_02a",
+  "campaign_id": "cmp_rr_02",
+  "name": "Replacement_Exact",
+  "daily_budget": 70
+ },
+ {
+  "id": "as_rr_02b",
+  "campaign_id": "cmp_rr_02",
+  "name": "Replacement_Phrase",
+  "daily_budget": 50
+ },
+ {
+  "id": "as_rr_03a",
+  "campaign_id": "cmp_rr_03",
+  "name": "storm damage",
+  "daily_budget": 50
+ },
+ {
+  "id": "as_rr_03b",
+  "campaign_id": "cmp_rr_03",
+  "name": "storm damage 2",
+  "daily_budget": 30
+ },
+ {
+  "id": "as_rr_04a",
+  "campaign_id": "cmp_rr_04",
+  "name": "Homeowners_35-65_25mi",
+  "daily_budget": 35
+ },
+ {
+  "id": "as_rr_04b",
+  "campaign_id": "cmp_rr_04",
+  "name": "Lookalike_PastCustomers_2pct",
+  "daily_budget": 25
+ },
+ {
+  "id": "as_hl_01a",
+  "campaign_id": "cmp_hl_01",
+  "name": "CarAccident_Exact",
+  "daily_budget": 150
+ },
+ {
+  "id": "as_hl_01b",
+  "campaign_id": "cmp_hl_01",
+  "name": "CarAccident_Phrase",
+  "daily_budget": 150
+ },
+ {
+  "id": "as_hl_02a",
+  "campaign_id": "cmp_hl_02",
+  "name": "WorkInjury_Exact",
+  "daily_budget": 100
+ },
+ {
+  "id": "as_hl_02b",
+  "campaign_id": "cmp_hl_02",
+  "name": "WorkInjury_Phrase",
+  "daily_budget": 80
+ },
+ {
+  "id": "as_hl_03a",
+  "campaign_id": "cmp_hl_03",
+  "name": "Lookalike_1pct_Clients",
+  "daily_budget": 60
+ },
+ {
+  "id": "as_hl_03b",
+  "campaign_id": "cmp_hl_03",
+  "name": "Local_Adults_25-64_20mi",
+  "daily_budget": 40
+ },
+ {
+  "id": "as_hl_04a",
+  "campaign_id": "cmp_hl_04",
+  "name": "SiteVisitors_30d",
+  "daily_budget": 25
+ },
+ {
+  "id": "as_hl_04b",
+  "campaign_id": "cmp_hl_04",
+  "name": "SiteVisitors_90d",
+  "daily_budget": 15
+ },
+ {
+  "id": "as_np_01a",
+  "campaign_id": "cmp_np_01",
+  "name": "Adults_25-55_10mi",
+  "daily_budget": 45
+ },
+ {
+  "id": "as_np_01b",
+  "campaign_id": "cmp_np_01",
+  "name": "Parents_Interest_10mi",
+  "daily_budget": 35
+ },
+ {
+  "id": "as_np_02a",
+  "campaign_id": "cmp_np_02",
+  "name": "Implants_Exact",
+  "daily_budget": 60
+ },
+ {
+  "id": "as_np_02b",
+  "campaign_id": "cmp_np_02",
+  "name": "Implants_Phrase",
+  "daily_budget": 40
+ },
+ {
+  "id": "as_np_03a",
+  "campaign_id": "cmp_np_03",
+  "name": "Visitors_30d",
+  "daily_budget": 20
+ },
+ {
+  "id": "as_np_03b",
+  "campaign_id": "cmp_np_03",
+  "name": "FormStarters_14d",
+  "daily_budget": 15
+ },
+ {
+  "id": "as_np_04a",
+  "campaign_id": "cmp_np_04",
+  "name": "AssetGroup_General",
+  "daily_budget": 50
+ },
+ {
+  "id": "as_np_04b",
+  "campaign_id": "cmp_np_04",
+  "name": "AssetGroup_Emergency",
+  "daily_budget": 30
+ }
+]

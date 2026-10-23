@@ -1,0 +1,15 @@
+{
+  "name": "@arc/agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@arc/core": "0.1.0",
+    "@arc/mcp-server": "0.1.0",
+    "@anthropic-ai/sdk": "^1.2.0",
+    "@modelcontextprotocol/sdk": "^1.32.2"
+  }
+}
