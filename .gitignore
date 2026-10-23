@@ -1,0 +1,21 @@
+node_modules/
+.env
+.env.local
+*.log
+dist/
+.next/
+out/
+coverage/
+# runtime state
+data/*.db
+data/*.db-*
+reports/*
+!reports/.gitkeep
+!reports/sample/
+# raw recordings (only trimmed MP4s in clips/ are committed)
+clips/raw/
+clips/.frames/
+*.webm
+*.mov
+.DS_Store
+test-results/
