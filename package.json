@@ -2,8 +2,13 @@
   "name": "agency-reporting-copilot",
   "private": true,
   "type": "module",
-  "workspaces": ["packages/*", "apps/*"],
-  "engines": { "node": ">=22.5" },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.5"
+  },
   "scripts": {
     "generate:data": "tsx scripts/generate-sample-data.ts",
     "mcp": "tsx packages/mcp-server/src/index.ts",
@@ -15,7 +20,8 @@
     "start": "npm run start -w @arc/dashboard",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
-    "test:e2e": "vitest run --config vitest.e2e.config.ts"
+    "test:e2e": "vitest run --config vitest.e2e.config.ts",
+    "record:clips": "node clips/record.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
