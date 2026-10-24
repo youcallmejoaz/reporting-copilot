@@ -18,7 +18,7 @@ npm test
 | `ANTHROPIC_API_KEY` | empty | Empty = test mode (template wording). Set it to have Claude write reports, emails, ad copy and Ask answers. |
 | `CLAUDE_MODEL` | `claude-opus-5-5` | Model for all Claude calls. |
 | `ADS_ADAPTER` | `mock` | `mock` = sample data. `google_ads` / `meta` are stubs until implemented. |
-| `AS_OF_DATE` | `2026-10-22` | Last day of the sample data. "This month" / "last 7 days" are relative to it. |
+| `AS_OF_DATE` | `2026-10-22` with mock data, else yesterday | Last complete day of data. "This month" / "last 7 days" end here. |
 | `MCP_SCOPES` | `read,draft` | `read` = reporting tools only. Add `draft` for paused draft ads. |
 | `DB_PATH` | `./data/copilot.db` | SQLite file for runs, drafts and the audit log. |
 | `REPORTS_DIR` | `./reports` | Where PDFs and recap drafts go. |
@@ -77,5 +77,5 @@ Why not Vercel: serverless functions have no persistent disk, so SQLite runs, dr
 
 1. Implement `packages/core/src/adapters/google-ads.ts` and `meta.ts`. The comments list the exact API fields. For clients on both platforms, add a small composite adapter that merges the two.
 2. Keep `createPausedAd` creating ads with status PAUSED (Google `PAUSED`, Meta `status=PAUSED`). `activateAd` is only called from the dashboard approval.
-3. Put credentials in env vars (see `.env.example`), set `ADS_ADAPTER`, and unset `AS_OF_DATE` handling by setting it to today's date in your scheduler (or remove the default).
+3. Put credentials in env vars (see `.env.example`), set `ADS_ADAPTER`, and remove `AS_OF_DATE` so reports run up to yesterday.
 4. Replace the placeholder account IDs in `clients/*/profile.md`.

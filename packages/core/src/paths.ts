@@ -54,7 +54,10 @@ export const paths = {
   reports: () => fromRoot(process.env.REPORTS_DIR || "reports"),
 };
 
-/** The date the sample data runs up to. Every relative range ("this month", "last 7 days") is anchored here. */
+/** The last complete day of data. Every relative range ("this month", "last 7 days") ends here. */
 export function asOfDate(): string {
-  return process.env.AS_OF_DATE || "2026-10-22";
+  if (process.env.AS_OF_DATE) return process.env.AS_OF_DATE;
+  // Sample data ends on a fixed day; live ad accounts report up to yesterday.
+  if ((process.env.ADS_ADAPTER || "mock") === "mock") return "2026-10-22";
+  return new Date(Date.now() - 86_400_000).toISOString().slice(0, 10);
 }
