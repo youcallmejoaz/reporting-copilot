@@ -1,9 +1,9 @@
-import { GoogleAdsAdapter } from "./google-ads.js";
-import { MetaAdapter } from "./meta.js";
-import { MockAdsAdapter } from "./mock.js";
-import type { AdsAdapter } from "./types.js";
+import { GoogleAdsAdapter } from "./google-ads";
+import { MetaAdapter } from "./meta";
+import { MockAdsAdapter } from "./mock";
+import type { AdsAdapter } from "./types";
 
-export type { AdsAdapter } from "./types.js";
+export type { AdsAdapter } from "./types";
 export { MockAdsAdapter, GoogleAdsAdapter, MetaAdapter };
 
 let instance: AdsAdapter | null = null;

@@ -1,2 +1,2 @@
-export * from "./runner.js";
-export * from "./ask.js";
+export * from "./runner";
+export * from "./ask";

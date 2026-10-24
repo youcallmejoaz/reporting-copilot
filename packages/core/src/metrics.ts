@@ -1,8 +1,8 @@
-import { getAdapter } from "./adapters/index.js";
-import { addDays, daysBetween, daysInMonth, monthStart, resolveRange } from "./dates.js";
-import { asOfDate } from "./paths.js";
-import { loadProfile } from "./profiles.js";
-import type { Campaign, DailyMetric, DateRange, Platform, Totals } from "./types.js";
+import { getAdapter } from "./adapters/index";
+import { addDays, daysBetween, daysInMonth, monthStart, resolveRange } from "./dates";
+import { asOfDate } from "./paths";
+import { loadProfile } from "./profiles";
+import type { Campaign, DailyMetric, DateRange, Platform, Totals } from "./types";
 
 const r2 = (x: number) => Math.round(x * 100) / 100;
 

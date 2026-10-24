@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { auditAccount } from "./audit-rules.js";
-import { generateJson, isLive, modeLabel } from "./claude.js";
-import { fmtMoney, fmtNum, fmtPct, fmtRoas } from "./format.js";
-import { pctChange, type CampaignMetricsResult, type MtdSummary } from "./metrics.js";
-import { paths } from "./paths.js";
-import type { AuditFinding, ClientProfile, Platform, Totals } from "./types.js";
+import type { auditAccount } from "./audit-rules";
+import { generateJson, isLive, modeLabel } from "./claude";
+import { fmtMoney, fmtNum, fmtPct, fmtRoas } from "./format";
+import { pctChange, type CampaignMetricsResult, type MtdSummary } from "./metrics";
+import { paths } from "./paths";
+import type { AuditFinding, ClientProfile, Platform, Totals } from "./types";
 
 type AuditResult = Awaited<ReturnType<typeof auditAccount>>;
 

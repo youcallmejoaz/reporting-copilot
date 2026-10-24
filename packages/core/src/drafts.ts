@@ -1,8 +1,8 @@
 import { randomUUID } from "node:crypto";
-import { getAdapter } from "./adapters/index.js";
-import { logAction, type Actor } from "./audit-log.js";
-import { getDb, nowIso } from "./db.js";
-import type { DraftAd, DraftStatus } from "./types.js";
+import { getAdapter } from "./adapters/index";
+import { logAction, type Actor } from "./audit-log";
+import { getDb, nowIso, plain, plainAll } from "./db";
+import type { DraftAd, DraftStatus } from "./types";
 
 /**
  * Input for a new draft. There is deliberately no `status` field: every draft is created PAUSED.
@@ -47,7 +47,8 @@ export async function createPausedDraft(input: NewDraft, actor: Actor): Promise<
 }
 
 export function getDraft(id: string): DraftAd | null {
-  return (getDb().prepare("SELECT * FROM drafts WHERE id = ?").get(id) as unknown as DraftAd) ?? null;
+  const row = getDb().prepare("SELECT * FROM drafts WHERE id = ?").get(id);
+  return row ? plain<DraftAd>(row) : null;
 }
 
 export function listDrafts(opts: { status?: DraftStatus; clientId?: string } = {}): DraftAd[] {
@@ -61,9 +62,9 @@ export function listDrafts(opts: { status?: DraftStatus; clientId?: string } = {
     where.push("client_id = ?");
     params.push(opts.clientId);
   }
-  return getDb()
+  return plainAll<DraftAd>(getDb()
     .prepare(`SELECT * FROM drafts ${where.length ? "WHERE " + where.join(" AND ") : ""} ORDER BY created_at DESC`)
-    .all(...params) as unknown as DraftAd[];
+    .all(...params));
 }
 
 /**

@@ -1,2 +1,2 @@
-export * from "./server.js";
-export * from "./in-process.js";
+export * from "./server";
+export * from "./in-process";

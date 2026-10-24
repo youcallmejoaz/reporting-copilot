@@ -1,9 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import { paths } from "../paths.js";
-import type { Ad, AdSet, Campaign, Client, DailyMetric } from "../types.js";
-import type { AdsAdapter } from "./types.js";
+import { paths } from "../paths";
+import type { Ad, AdSet, Campaign, Client, DailyMetric } from "../types";
+import type { AdsAdapter } from "./types";
 
 interface Dataset {
   clients: Client[];

@@ -1,4 +1,4 @@
-import type { Ad, AdSet, Campaign, Client, DailyMetric, DraftAd } from "../types.js";
+import type { Ad, AdSet, Campaign, Client, DailyMetric, DraftAd } from "../types";
 
 /** What an ads platform must provide. Read methods power reporting; the draft methods are the only writes. */
 export interface AdsAdapter {

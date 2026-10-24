@@ -1,4 +1,4 @@
-import type { AdsAdapter } from "./types.js";
+import type { AdsAdapter } from "./types";
 
 /**
  * Google Ads API adapter (stub).

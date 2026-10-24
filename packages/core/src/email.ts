@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import { generateJson, isLive, modeLabel } from "./claude.js";
-import { fmtMoney, fmtRoas } from "./format.js";
-import { prettyRange } from "./dates.js";
-import { paths } from "./paths.js";
-import type { WeeklyReport } from "./report.js";
-import type { ClientProfile } from "./types.js";
+import { generateJson, isLive, modeLabel } from "./claude";
+import { fmtMoney, fmtRoas } from "./format";
+import { prettyRange } from "./dates";
+import { paths } from "./paths";
+import type { WeeklyReport } from "./report";
+import type { ClientProfile } from "./types";
 
 export interface RecapEmail {
   to: string;

@@ -11,8 +11,8 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import type { Ad, AdSet, Campaign, Client, DailyMetric, Platform } from "../packages/core/src/types.js";
-import { addDays } from "../packages/core/src/dates.js";
+import type { Ad, AdSet, Campaign, Client, DailyMetric, Platform } from "../packages/core/src/types";
+import { addDays } from "../packages/core/src/dates";
 
 const END = process.env.AS_OF_DATE || "2026-10-22";
 const DAYS = 60;

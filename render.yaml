@@ -1,0 +1,47 @@
+# Render Blueprint: dashboard (with a persistent disk for SQLite + PDFs) and a weekly cron trigger.
+# Persistent disks need a paid instance type (Starter or above).
+services:
+  - type: web
+    name: reporting-copilot
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/runs
+    disk:
+      name: copilot-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DB_PATH
+        value: /var/data/copilot.db
+      - key: REPORTS_DIR
+        value: /var/data/reports
+      - key: AS_OF_DATE
+        value: "2026-10-22"
+      - key: ADS_ADAPTER
+        value: mock
+      - key: CLAUDE_MODEL
+        value: claude-opus-5-5
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: DASHBOARD_USER
+        sync: false
+      - key: DASHBOARD_PASSWORD
+        sync: false
+      - key: CRON_SECRET
+        generateValue: true
+
+  # Mondays 07:00 UTC: ask the dashboard to run the weekly job (the job runs inside the web service, next to the disk).
+  - type: cron
+    name: reporting-copilot-weekly
+    runtime: node
+    schedule: "0 7 * * 1"
+    buildCommand: "echo no build needed"
+    startCommand: 'curl -fsS -X POST -H "Authorization: Bearer $CRON_SECRET" "$DASHBOARD_URL/api/runs"'
+    envVars:
+      - key: CRON_SECRET
+        fromService:
+          type: web
+          name: reporting-copilot
+          envVarKey: CRON_SECRET
+      - key: DASHBOARD_URL
+        sync: false

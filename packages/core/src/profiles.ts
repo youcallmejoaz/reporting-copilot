@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import { paths } from "./paths.js";
-import type { ClientProfile, ProfileSettings } from "./types.js";
+import { paths } from "./paths";
+import type { ClientProfile, ProfileSettings } from "./types";
 
 /** Minimal front-matter parser: flat `key: value` lines between `---` fences. */
 export function parseFrontMatter(raw: string): { data: Record<string, string>; body: string } {

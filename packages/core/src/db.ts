@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { DatabaseSync } from "node:sqlite";
-import { paths } from "./paths.js";
+import { paths } from "./paths";
 
 // Loaded at runtime so bundlers (tsup/esbuild, Next.js) cannot rewrite the "node:sqlite" specifier.
 const { DatabaseSync: Database } = process.getBuiltinModule("node:sqlite") as typeof import("node:sqlite");
@@ -84,3 +84,11 @@ export function closeDb(): void {
 }
 
 export const nowIso = () => new Date().toISOString();
+
+/** node:sqlite returns null-prototype rows; copy them into plain objects (React and JSON-friendly). */
+export function plain<T>(row: unknown): T {
+  return { ...(row as object) } as T;
+}
+export function plainAll<T>(rows: unknown[]): T[] {
+  return rows.map((r) => plain<T>(r));
+}

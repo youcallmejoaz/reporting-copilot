@@ -1,4 +1,4 @@
-import { getDb, nowIso } from "./db.js";
+import { getDb, nowIso, plain, plainAll } from "./db";
 
 export type RunItemStatus = "queued" | "pulling" | "writing" | "rendering" | "done" | "failed";
 
@@ -60,12 +60,13 @@ export function upsertRunItem(item: Partial<RunItemRow> & Pick<RunItemRow, "run_
 }
 
 export function listRuns(limit = 20): RunRow[] {
-  return getDb().prepare("SELECT * FROM runs ORDER BY started_at DESC LIMIT ?").all(limit) as unknown as RunRow[];
+  return plainAll<RunRow>(getDb().prepare("SELECT * FROM runs ORDER BY started_at DESC LIMIT ?").all(limit));
 }
 
 export function getRun(id: string): (RunRow & { items: RunItemRow[] }) | null {
-  const run = getDb().prepare("SELECT * FROM runs WHERE id = ?").get(id) as unknown as RunRow | undefined;
-  if (!run) return null;
-  const items = getDb().prepare("SELECT * FROM run_items WHERE run_id = ? ORDER BY client_name").all(id) as unknown as RunItemRow[];
+  const row = getDb().prepare("SELECT * FROM runs WHERE id = ?").get(id);
+  if (!row) return null;
+  const run = plain<RunRow>(row);
+  const items = plainAll<RunItemRow>(getDb().prepare("SELECT * FROM run_items WHERE run_id = ? ORDER BY client_name").all(id));
   return { ...run, items };
 }

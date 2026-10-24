@@ -1,12 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
-import { getAdapter } from "./adapters/index.js";
-import { generateJson, isLive } from "./claude.js";
-import { resolveRange } from "./dates.js";
-import { aggregate, groupBy } from "./metrics.js";
-import { asOfDate, paths } from "./paths.js";
-import { loadProfile } from "./profiles.js";
-import type { NewDraft } from "./drafts.js";
+import { getAdapter } from "./adapters/index";
+import { generateJson, isLive } from "./claude";
+import { resolveRange } from "./dates";
+import { aggregate, groupBy } from "./metrics";
+import { asOfDate, paths } from "./paths";
+import { loadProfile } from "./profiles";
+import type { NewDraft } from "./drafts";
 
 const SCHEMA = {
   type: "object",

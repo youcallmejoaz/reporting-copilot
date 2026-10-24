@@ -1,4 +1,4 @@
-import type { DateRange } from "./types.js";
+import type { DateRange } from "./types";
 
 const DAY = 86_400_000;
 

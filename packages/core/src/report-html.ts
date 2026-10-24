@@ -1,6 +1,6 @@
-import { prettyRange } from "./dates.js";
-import { fmtMoney, fmtPct, fmtRoas } from "./format.js";
-import type { WeeklyReport } from "./report.js";
+import { prettyRange } from "./dates";
+import { fmtMoney, fmtPct, fmtRoas } from "./format";
+import type { WeeklyReport } from "./report";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 

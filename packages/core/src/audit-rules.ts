@@ -1,9 +1,9 @@
-import { getAdapter } from "./adapters/index.js";
-import { resolveRange } from "./dates.js";
-import { aggregate, getMtdSummary, groupBy } from "./metrics.js";
-import { asOfDate } from "./paths.js";
-import { loadProfile } from "./profiles.js";
-import type { AuditFinding } from "./types.js";
+import { getAdapter } from "./adapters/index";
+import { resolveRange } from "./dates";
+import { aggregate, getMtdSummary, groupBy } from "./metrics";
+import { asOfDate } from "./paths";
+import { loadProfile } from "./profiles";
+import type { AuditFinding } from "./types";
 
 /** Thresholds, in one place so the audit skill and the docs can quote them. */
 export const AUDIT_RULES = {

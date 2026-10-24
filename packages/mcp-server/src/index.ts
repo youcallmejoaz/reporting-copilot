@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { createServer, scopesFromEnv } from "./server.js";
+import { createServer, scopesFromEnv } from "./server";
 
 // stdout is the MCP channel: keep Node's SQLite experimental warning (and any other noise) on stderr only.
 const scopes = scopesFromEnv();

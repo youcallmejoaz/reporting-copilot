@@ -1,6 +1,6 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
-import { createServer, type ServerOptions } from "./server.js";
+import { createServer, type ServerOptions } from "./server";
 
 /**
  * Connect an MCP client to a fresh in-process server. The weekly runner and the dashboard's Ask panel use this,

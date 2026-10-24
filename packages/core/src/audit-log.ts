@@ -1,4 +1,4 @@
-import { getDb, nowIso } from "./db.js";
+import { getDb, nowIso, plainAll } from "./db";
 
 export type Actor = "mcp" | "runner" | "dashboard" | "ask" | "system" | (string & {});
 export type Scope = "read" | "draft" | "approve" | "system";
@@ -33,7 +33,7 @@ export function listAuditLog(opts: { limit?: number; afterId?: number; clientId?
     params.push(opts.clientId);
   }
   params.push(opts.limit ?? 100);
-  return getDb()
+  return plainAll<AuditEntry>(getDb()
     .prepare(`SELECT * FROM audit_log ${where.length ? "WHERE " + where.join(" AND ") : ""} ORDER BY id DESC LIMIT ?`)
-    .all(...params) as unknown as AuditEntry[];
+    .all(...params));
 }
