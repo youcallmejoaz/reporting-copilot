@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="term.css"></head><body>
+<div class="win"><div class="bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="title">claude · ~/agency-reporting-copilot</span></div><div class="body" id="body"></div></div>
+<script src="term.js"></script><script>
+replay({
+  prompt: "Add the approval gate: drafts are always paused, only a click in the dashboard approves, log every decision.",
+  typeMs: 28,
+  thinking: 700,
+  lines: [
+    [0, '<span class="acc">⏺</span> Update <span class="dim">packages/core/src/drafts.ts</span>  <span class="ok">createPausedDraft()</span> has no status input; <span class="ok">decideDraft()</span> logs who/when'],
+    [380, '<span class="acc">⏺</span> Create <span class="dim">apps/dashboard/app/drafts/page.tsx</span>  Paused badge · Approve · Reject · live audit log'],
+    [380, '<span class="acc">⏺</span> Create <span class="dim">tests/approval-gate.test.ts</span>'],
+    [520, '<span class="acc">⏺</span> Bash(npm test -- approval-gate)'],
+    [450, '  <span class="ok">✓</span> creates drafts PAUSED on the platform and in the database'],
+    [140, '  <span class="ok">✓</span> ignores any attempt to create a draft that is already live'],
+    [140, '  <span class="ok">✓</span> only goes live after approval, and logs who approved it'],
+    [140, '  <span class="ok">✓</span> rejecting keeps the ad paused'],
+    [140, '  <span class="ok">✓</span> cannot decide the same draft twice'],
+    [300, '  <span class="ok">6 passed</span>'],
+  ],
+});
+</script></body></html>

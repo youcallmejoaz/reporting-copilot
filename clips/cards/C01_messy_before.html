@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="card.css"><style>
+.tabs { display: flex; gap: 2px; margin-top: 26px; height: 42px; overflow: hidden; }
+.tab { flex: 0 0 auto; background: var(--panel); border: 1px solid var(--rule); border-bottom: none; border-radius: 10px 10px 0 0; padding: 10px 14px; font-size: 14px; color: var(--ink2); white-space: nowrap; max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
+.sheet { margin-top: 0; border: 1px solid var(--rule); border-radius: 0 10px 10px 10px; flex: 1; overflow: hidden; position: relative; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; font-variant-numeric: tabular-nums; }
+td, th { border: 1px solid var(--rule); padding: 7px 10px; text-align: right; }
+th { background: var(--panel); color: var(--ink2); font-weight: 600; text-align: center; }
+td:first-child { text-align: left; color: var(--ink2); }
+.bad { background: var(--red-bg); color: var(--red-t); font-weight: 700; }
+.warn { background: var(--amber-bg); color: var(--amber-t); }
+.clock { position: absolute; right: 80px; top: 64px; text-align: right; }
+.clock b { display: block; font-size: 44px; font-variant-numeric: tabular-nums; color: var(--red-t); }
+.clock span { color: var(--ink2); font-size: 16px; }
+.sticky { position: absolute; background: #fff7b0; padding: 12px 16px; font-size: 17px; box-shadow: 0 6px 18px rgba(0,0,0,.12); transform: rotate(-3deg); font-family: "Comic Sans MS", "Inter", sans-serif; }
+</style></head><body><div class="frame">
+<div class="kicker in">The problem</div>
+<h1 class="in" style="animation-delay:.15s">Monday morning, every week.</h1>
+<div class="sub in" style="animation-delay:.3s">4 clients × 2 ad platforms × copy-paste into a spreadsheet.</div>
+<div class="clock in" style="animation-delay:.4s"><span>Reporting time this week</span><b id="t">0h 00m</b></div>
+<div class="tabs" id="tabs"></div>
+<div class="sheet"><table id="sheet"></table>
+<div class="sticky in" style="right:40px;top:120px;animation-delay:4.2s">which campaign is "roof ads new FINAL"??</div>
+<div class="sticky in" style="right:260px;bottom:40px;animation-delay:5.4s;transform:rotate(2deg)">ROAS formula broken again</div>
+</div></div>
+<script>
+const tabs = ["Ads Manager – Glowfield","Google Ads – Glowfield","Ads Manager – Ridgeline","Google Ads – Ridgeline","Weekly ROAS v7 FINAL.xlsx","Google Ads – Harbor Law","Ads Manager – Harbor Law","Ads Manager – Northstar","Google Ads – Northstar","Report template (copy)","Recap email draft","Client notes.docx","Naming conventions?","Ads Manager – Glowfield (2)","Google Ads – Ridgeline (2)"];
+tabs.forEach((t,i)=>setTimeout(()=>{const d=document.createElement('div');d.className='tab in';d.textContent=t;document.getElementById('tabs').appendChild(d)},300+i*260));
+const rows=[["","Spend","Revenue","ROAS","Leads","CPL","CTR"],["Glowfield · Meta","$1,627","$1,018","0.63","—","—","1.1%"],["Glowfield · Google","$1,049","$7,835","7.47","—","—","3.2%"],["Ridgeline · Google","#REF!","$11,920","#DIV/0!","26","$71","4.6%"],["Ridgeline · Meta","$411","$1,350","3.28","3","$137","1.3%"],["Harbor · Google","$3,242","$11,700","3.61","13","$249","2.9%"],["Harbor · Meta","$864","$1,648","1.91","2","$432","1.2%"],["Northstar · Meta","$880","$3,960","4.50","18","$49","0.9%"],["Northstar · Google","$1,100","$2,940","2.67","14","$79","4.1%"],["TOTAL","=SUM(B2:B9","","","","",""]];
+const tb=document.getElementById('sheet');
+rows.forEach((r,i)=>setTimeout(()=>{const tr=document.createElement('tr');r.forEach((c,j)=>{const el=document.createElement(i===0?'th':'td');el.textContent=c;if(/#|0\.63|=SUM/.test(c))el.className='bad';if(c==='1.91')el.className='warn';tr.appendChild(el)});tr.className='in';tb.appendChild(tr)},900+i*330));
+let m=0;const t=document.getElementById('t');setInterval(()=>{m=Math.min(m+7,400);t.textContent=Math.floor(m/60)+'h '+String(m%60).padStart(2,'0')+'m'},120);
+</script></body></html>

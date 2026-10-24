@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="term.css"></head><body>
+<div class="win"><div class="bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="title">claude · ~/agency-reporting-copilot · plan mode</span></div><div class="body" id="body"></div></div>
+<script src="term.js"></script><script>
+replay({
+  prompt: "Read the brief. Ask me what you need, then give me a phased plan with file tree, data model and test plan. Don't build yet.",
+  typeMs: 30,
+  thinking: 1100,
+  lines: [
+    [0, '<span class="acc">⏺</span> Plan: Agency Reporting Copilot'],
+    [250, '<div class="box">'
+      + '<span class="dim">Phase 0</span>  Repo + .env.example + Git LFS for clips<br>'
+      + '<span class="dim">Phase 1</span>  Sample data (4 fictional clients, 60 days) · adapters · metrics · audit rules<br>'
+      + '<span class="dim">Phase 2</span>  Ads Data MCP server · <span class="ok">read</span> and <span class="warn">draft</span> scopes · audit log<br>'
+      + '<span class="dim">Phase 3</span>  Skills: weekly-roas-report · client-recap-email · account-audit<br>'
+      + '<span class="dim">Phase 4</span>  Weekly runner → reports/YYYY-MM-DD/*.pdf<br>'
+      + '<span class="dim">Phase 5</span>  Dashboard: runs, PDFs, <span class="warn">⏸ paused drafts</span> → Approve / Reject<br>'
+      + '<span class="dim">Phase 6</span>  README · SETUP · HANDOFF<br>'
+      + '<span class="dim">Phase 7</span>  Clips + MANIFEST'
+      + '</div>'],
+    [700, '<span class="dim">Data model:</span> runs · run_items · drafts(PAUSED|APPROVED|REJECTED) · audit_log'],
+    [500, '<span class="dim">Tests:</span> MCP tools · audit finds every planted problem · approval gate · report job &lt; 2 min'],
+    [600, '<span class="warn">?</span> Push back: audit rules must be deterministic to be testable. Add an <span class="acc">audit_account</span> tool?'],
+  ],
+});
+</script></body></html>

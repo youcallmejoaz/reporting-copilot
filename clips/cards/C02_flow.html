@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="card.css"><style>
+.flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 34px; margin-top: 70px; position: relative; }
+.box { border: 2px solid var(--ink); border-radius: 16px; padding: 22px 18px; min-height: 196px; background: #fff; position: relative; }
+.box .n { font-size: 14px; font-weight: 700; color: var(--muted); letter-spacing: .08em; }
+.box h3 { font-size: 23px; margin: 8px 0 10px; line-height: 1.15; }
+.box li { font-size: 15.5px; color: var(--ink2); margin: 4px 0; }
+.box ul { padding-left: 18px; margin: 0; }
+.box.review { border-color: var(--green); background: var(--green-bg); }
+.arrow { position: absolute; top: 50%; right: -30px; width: 26px; height: 2px; background: var(--ink); }
+.arrow::after { content: ""; position: absolute; right: -2px; top: -5px; border-left: 9px solid var(--ink); border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+.under { display: grid; grid-template-columns: repeat(5, 1fr); gap: 34px; margin-top: 22px; }
+.note { border: 1.5px dashed var(--rule); border-radius: 12px; padding: 12px 16px; font-size: 15.5px; color: var(--ink2); }
+</style></head><body><div class="frame">
+<div class="kicker in">How it works</div>
+<h1 class="in" style="animation-delay:.15s">From ad accounts to a report you just review.</h1>
+<div class="flow">
+ <div class="box in" style="animation-delay:.6s"><div class="n">01</div><h3>Ad accounts</h3><ul><li>Meta Ads</li><li>Google Ads</li><li>(mock data today)</li></ul><div class="arrow"></div></div>
+ <div class="box in" style="animation-delay:1.5s"><div class="n">02</div><h3>Ads Data MCP server</h3><ul><li>Read tools</li><li>Draft tool (paused only)</li><li>Audit log</li></ul><div class="arrow"></div></div>
+ <div class="box in" style="animation-delay:2.4s"><div class="n">03</div><h3>Claude Skills</h3><ul><li>weekly-roas-report</li><li>client-recap-email</li><li>account-audit</li></ul><div class="arrow"></div></div>
+ <div class="box in" style="animation-delay:3.3s"><div class="n">04</div><h3>PDF reports</h3><ul><li>1 page per client</li><li>Recap email draft</li><li>Every Monday 7:00</li></ul><div class="arrow"></div></div>
+ <div class="box review in" style="animation-delay:4.2s"><div class="n">05</div><h3>Your review</h3><ul><li>Read the PDF</li><li>Send the email</li><li>Approve or reject ad drafts</li></ul></div>
+</div>
+<div class="under">
+ <div></div>
+ <div class="note in" style="animation-delay:5.4s;grid-column: 2 / 4">📁 <b>clients/&lt;client&gt;/profile.md</b>: targets, naming, targeting decisions, report format, tone</div>
+ <div></div>
+ <div class="note in" style="animation-delay:6.4s"><span class="tag a">⏸ Paused</span> until you click Approve</div>
+</div>
+<div class="foot"><span>Agency Reporting Copilot</span><span>Sample data · fictional clients</span></div>
+</div></body></html>

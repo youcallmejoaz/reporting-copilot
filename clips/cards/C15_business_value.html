@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="card.css"><style>
+.bars { margin-top: 70px; display: grid; gap: 34px; }
+.bar-row { display: grid; grid-template-columns: 280px 1fr 170px; gap: 24px; align-items: center; }
+.label { font-size: 22px; font-weight: 600; }
+.label span { display: block; font-size: 16px; color: var(--muted); font-weight: 500; }
+.track { height: 54px; background: var(--panel); border-radius: 12px; overflow: hidden; }
+.fill { height: 100%; width: 0; border-radius: 12px; transition: width 1.6s cubic-bezier(.2,.7,.2,1); }
+.val { font-size: 40px; font-weight: 800; font-variant-numeric: tabular-nums; text-align: right; }
+.save { margin-top: 54px; font-size: 30px; font-weight: 700; }
+.save b { color: var(--green-t); }
+</style></head><body><div class="frame">
+<div class="kicker in">Business value</div>
+<h1 class="in" style="animation-delay:.15s">Hours of reporting become one review pass.</h1>
+<div class="bars">
+ <div class="bar-row in" style="animation-delay:.6s"><div class="label">Before<span>pull data, build sheets, write 4 reports + emails</span></div><div class="track"><div class="fill" id="b1" style="background:var(--red)"></div></div><div class="val" id="v1">0h</div></div>
+ <div class="bar-row in" style="animation-delay:1.2s"><div class="label">After<span>review PDFs, send emails, approve drafts</span></div><div class="track"><div class="fill" id="b2" style="background:var(--green)"></div></div><div class="val" id="v2">0m</div></div>
+</div>
+<div class="save in" style="animation-delay:3.4s">≈ <b>5½ hours back</b> every week, at 4 clients.</div>
+<div class="foot"><span><span class="tag a">Placeholder numbers</span> &nbsp;replace with your own time tracking</span><span>Sample data · fictional clients</span></div>
+</div><script>
+setTimeout(()=>{document.getElementById('b1').style.width='100%';document.getElementById('b2').style.width='8.3%';},1300);
+let h=0,m=0;const i=setInterval(()=>{h=Math.min(h+0.25,6);m=Math.min(m+2,30);document.getElementById('v1').textContent=(h%1?h.toFixed(1):h)+'h';document.getElementById('v2').textContent=m+'m';if(h>=6&&m>=30)clearInterval(i)},70);
+</script></body></html>

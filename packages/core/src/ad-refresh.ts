@@ -20,13 +20,13 @@ function nextVersionName(name: string): string {
   return m ? `${m[1]}${Number(m[2]) + 1}` : `${name}_v2`;
 }
 
-/** Test-mode copy: benefit-first rewrite that keeps the original claims. */
+/** Test-mode copy: clearer call to action, adding no new offers or claims. */
 function templateCopy(headline: string, text: string): { headline: string; primary_text: string; rationale: string } {
   const h = headline.replace(/[.!]$/, "");
   return {
-    headline: h.length <= 30 ? `${h}, booked in 60 seconds` : h.slice(0, 44),
-    primary_text: `${text.replace(/\.$/, "")}. Pick a time that suits you online today.`.slice(0, 125),
-    rationale: "Benefit-first headline and a clearer call to action; offer and claims unchanged.",
+    headline: h.length <= 28 ? `${h}: see what's included` : h.slice(0, 44),
+    primary_text: `${text.replace(/\.$/, "")}. Choose a time that suits you.`.slice(0, 125),
+    rationale: "Curiosity-led headline and a clearer call to action; offer and claims unchanged.",
   };
 }
 
