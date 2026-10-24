@@ -46,7 +46,7 @@ npm run build:mcp
   "mcpServers": {
     "ads-data": {
       "command": "node",
-      "args": ["/ABSOLUTE/PATH/TO/agency-reporting-copilot/packages/mcp-server/dist/index.js"],
+      "args": ["/ABSOLUTE/PATH/TO/reporting-copilot/packages/mcp-server/dist/index.js"],
       "env": { "MCP_SCOPES": "read" }
     }
   }
