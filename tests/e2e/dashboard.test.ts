@@ -12,6 +12,13 @@ let server: ChildProcess;
 let browser: Browser;
 
 async function waitForServer() {
+  try {
+    await fetch(BASE);
+    throw new Error(`port ${PORT} is already in use; stop the old server first`);
+  } catch (err) {
+    if (err instanceof Error && err.message.startsWith("port")) throw err;
+  }
+  await new Promise((r) => setTimeout(r, 300));
   for (let i = 0; i < 60; i++) {
     try {
       if ((await fetch(BASE)).ok) return;
@@ -29,14 +36,21 @@ beforeAll(async () => {
     if (b.status !== 0) throw new Error("dashboard build failed");
   }
   // Same DB_PATH / REPORTS_DIR as this test process (set in tests/setup.ts).
-  server = spawn("npx", ["next", "start", "-p", String(PORT)], { cwd: dashboard, env: { ...process.env }, stdio: "ignore" });
+  // Detached = own process group, so afterAll can stop `next` as well as the `npx` wrapper.
+  server = spawn("npx", ["next", "start", "-p", String(PORT)], { cwd: dashboard, env: { ...process.env }, stdio: "ignore", detached: true });
   await waitForServer();
   browser = await chromium.launch();
 });
 
 afterAll(async () => {
   await browser?.close();
-  server?.kill();
+  if (server?.pid) {
+    try {
+      process.kill(-server.pid, "SIGTERM");
+    } catch {
+      server.kill();
+    }
+  }
 });
 
 describe("dashboard", () => {
